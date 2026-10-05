@@ -1,0 +1,318 @@
+/* =========================
+   HAPPY TECH - MAIN CSS
+   ========================= */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bec4cf;
+    color: #222;
+    line-height: 1.0;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background: linear-gradient(135deg, #6dc008, #0d2741);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    height:250px;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+    opacity: 0.90;
+}
+
+/* Navigation */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 9px 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: rgb(214, 225, 16);
+    color: #033a8b;
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    text-align: center;
+    padding: 70px 15px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)),
+        url("images/phone-accessories.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: rgb(229, 218, 146);
+}
+
+.hero h2 {
+    font-size: 36px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+    font-style:oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* View Products button */
+
+.button {
+    display: inline-block;
+    background-color: rgba(225, 243, 27, 0.836);
+    color: #0d47a1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 13px 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #43f009;
+    color: #111;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   PRODUCTS SECTION
+   ========================= */
+
+.products {
+    padding: 55px 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.products > h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #0d47a1;
+    margin-bottom: 35px;
+}
+
+/* Product grid */
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Product card */
+
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Product images */
+
+.product-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 9px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Product title */
+
+.product-card h3 {
+    font-size: 20px;
+    color: #0d47a1;
+    margin-bottom: 8px;
+}
+
+/* Product description */
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    min-height: 45px;
+}
+
+/* Price */
+
+.product-card strong {
+    display: block;
+    color: #e65100;
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+/* Order button */
+
+.order-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.order-button:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+
+    padding: 25px 15px;
+
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1000px) {
+
+    .product-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        padding: 8px 14px;
+    }
+
+    .hero {
+        padding: 55px 15px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .products {
+        padding: 40px 15px;
+    }
+
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .product-card img {
+        height: 160px;
+    }
+}
+
+/* =========================
+   SMALL PHONES
+   ========================= */
+
+@media (max-width: 450px) {
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 220px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+}
